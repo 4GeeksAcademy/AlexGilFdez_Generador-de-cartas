@@ -19,7 +19,7 @@ let valores = [
   "10",
   "J",
   "Q",
-  "K",
+  "K"
 ];
 let palo1 = document.querySelector("#simboloArriba");
 let numero = document.querySelector("#numero");

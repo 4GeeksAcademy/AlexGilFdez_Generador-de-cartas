@@ -31,8 +31,8 @@ function eleccionCarta(palo, numero) {
   carta.push(numero[Math.floor(Math.random() * numero.length)]);
   return carta;
 }
-function colorPalo(paloeleccion) {
-  if (paloeleccion[0] == "♥" || paloeleccion[0] == "♦") {
+function colorPalo(paloEleccion) {
+  if (paloEleccion[0] == "♥" || paloEleccion[0] == "♦") {
     document.querySelector("#simboloArriba").style.color = "red";
     document.querySelector("#simboloAbajo").style.color = "red";
   } else {
@@ -41,11 +41,11 @@ function colorPalo(paloeleccion) {
   }
 }
 
-function asignarValor(arr) {
-  console.log(arr[0]);
-  palo1.innerHTML = arr[0];
-  palo2.innerHTML = arr[0];
-  numero.innerHTML = arr[1];
+function asignarValor(elementosCarta) {
+  console.log(elementosCarta[0]);
+  palo1.innerHTML = elementosCarta[0];
+  palo2.innerHTML = elementosCarta[0];
+  numero.innerHTML = elementosCarta[1];
 }
 
 function generarCarta() {
